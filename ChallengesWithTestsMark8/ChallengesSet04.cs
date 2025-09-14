@@ -160,6 +160,10 @@ namespace ChallengesWithTestsMark8
 
         public int Factorial(int number)
         {
+            if (number < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
            int answer = 1;
 
            for (int i = 1; i <= number; i++)
